@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdelrahman Tamer | MO4 Application</title>
+<style>
+:root{--g:#00e5a0;--b:#070707;--w:#f4f4ef;--gray:#a2a29c;--line:#292929}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--b);color:var(--w);font-family:Arial,Helvetica,sans-serif}
+section{min-height:100vh;position:relative;padding:8vh 7vw 12vh;display:flex;align-items:center;border-bottom:1px solid var(--line);overflow:hidden}
+.wrap{max-width:1150px;width:100%;margin:auto}.green{color:var(--g)}.label{color:var(--g);font-size:11px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(62px,11vw,155px);line-height:.78;letter-spacing:-.085em;margin:20px 0}
+h2{font-size:clamp(50px,8vw,105px);line-height:.84;letter-spacing:-.075em;margin:20px 0}
+p{font-size:clamp(17px,2vw,25px);line-height:1.35;color:#c9c9c3;max-width:760px}
+.hero{background:#050505}
+.hero img,.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero img{filter:brightness(.34);object-position:center}
+.hero:after,.final:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.25),rgba(0,0,0,.8))}
+.content{position:relative;z-index:2}
+.micro{font-size:10px;color:#777;text-transform:uppercase;letter-spacing:.12em;margin-top:30px}
+.next{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:5;border:1px solid #555;background:#0b0b0b;color:#fff;padding:13px 19px;font-size:10px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;cursor:pointer}
+.next:hover{border-color:var(--g);color:var(--g)}
+.next:after{content:"  ↓"}
+.reaction b{color:#aaa}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:center}
+.quote{font-size:clamp(34px,5vw,68px);font-weight:900;line-height:.96;letter-spacing:-.055em;max-width:1000px;margin:25px 0 45px}
+.cards{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);gap:1px;background:var(--line)}
+.card{background:#0b0b0b;padding:30px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}
+.card:hover{background:#121212}.num{color:var(--g);font-size:10px;font-weight:900;letter-spacing:.15em}.card h3{font-size:28px;line-height:.98;letter-spacing:-.04em;margin:28px 0 10px}.card p{font-size:13px;color:#85857f;margin:0}.tag{font-size:9px;color:#555;text-transform:uppercase;letter-spacing:.12em}
+.white{background:var(--w);color:#080808}.white p{color:#4e4e49}.white .label{color:#008b68}
+.pattern{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}.pattern div{border-top:2px solid #111;padding-top:17px}.pattern h3{margin:0 0 7px}.pattern p{font-size:13px}
+.farah{background:#101010}.farahbox{border:1px solid #303030;padding:42px;max-width:950px}.farahbox h2{margin-top:12px}.farahbox p{font-size:18px}.callout{border-left:3px solid var(--g);background:#080808;padding:20px;margin-top:28px;color:#aaa;font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:45px}.step{background:#0a0a0a;padding:24px;min-height:160px}.step .n{color:var(--g);font-weight:900;font-size:11px}.step h4{margin:27px 0 8px;font-size:16px}.step p{font-size:11px;color:#777;margin:0}
+.manifesto{background:#151515}.manifesto h2{max-width:1000px}
+.final{padding:0;text-align:center}.final img{filter:brightness(.38)}.final .content{max-width:950px}.final p{margin:28px auto;font-size:19px}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:14px 22px;border:1px solid #eee;color:#fff;font-size:10px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.btn.primary{background:var(--g);color:#000;border-color:var(--g)}
+footer{padding:16px 7vw;border-top:1px solid var(--line);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#555;display:flex;justify-content:space-between}
+@media(max-width:800px){section{padding:75px 6vw 100px}.grid{grid-template-columns:1fr;gap:30px}.cards{grid-template-columns:1fr}.pattern{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}</style>
+</head>
+<body>
+
+<section class="hero" id="s1">
+<img src="dog-opening.jpeg" alt="Dog in a suit">
+<div class="content wrap">
+<div class="label">MO4 Network / Hiring</div>
+<h1>I could've<br>sent a <span class="green">CV.</span></h1>
+<p>But Farah Khaled said they're hiring, and you asked for my story. So I had a small problem: how do I make a CV feel less like a CV?</p>
+<div class="micro">Spoiler: this website is the answer.</div>
+</div>
+<button class="next" onclick="go('s2')">Okay, this guy has a plan</button>
+</section>
+
+<section id="s2">
+<div class="wrap grid">
+<div><div class="label">01 / First impression</div><h2>Hi MO4.<br>I'm Abdelrahman.</h2></div>
+<div>
+<p>Business Administration graduate with hands-on experience across business development, marketing, operations, events and business intelligence.</p>
+<p>Basically, I have collected enough job titles to make LinkedIn slightly confused.</p>
+</div>
+</div>
+<button class="next" onclick="go('s3')">That's a lot. What's the point?</button>
+</section>
+
+<section id="s3">
+<div class="wrap">
+<div class="label">02 / The actual point</div>
+<div class="quote">My strongest skill isn't a job title. It's <span class="green">problem solving.</span></div>
+<p>I like the moment when the brief is messy, the answer isn't obvious, and someone says: "So... what do we do now?"</p>
+<p>That's usually when I stop being confused and start becoming useful.</p>
+</div>
+<button class="next" onclick="go('s4')">Alright. Show me receipts.</button>
+</section>
+
+<section id="s4">
+<div class="wrap">
+<div class="label">03 / Receipts</div>
+<div class="quote">Different roles. Different problems.<br><span class="green">Same instinct.</span></div>
+<div class="cards">
+<div class="card"><div><div class="num">ARIKA</div><h3>Business Intelligence & Campaign Operations</h3><p>Analyzed sales, marketing, product and competitor data, built competitive analysis, supported launches, partnerships and campaign execution, and developed business problem frameworks.</p></div><div class="tag">Source: uploaded CV</div></div>
+<div class="card"><div><div class="num">APEXIFY</div><h3>Sales & Event Operations</h3><p>Turned client requirements into proposals and internal briefs, coordinated designers, production and suppliers, handled client communication and supported B2B acquisition.</p></div><div class="tag">Source: uploaded CV</div></div>
+<div class="card"><div><div class="num">SILLA</div><h3>Business Development & Sales</h3><p>Researched potential demand, built B2B prospect lists, presented product value, managed follow-ups and developed sales opportunities for a new product line.</p></div><div class="tag">Source: uploaded CV</div></div>
+<div class="card"><div><div class="num">ENACTUS</div><h3>Leadership & Entrepreneurship</h3><p>Worked across R&amp;D, fundraising, marketing, logistics, graphic design, presentation and training, and mentored Solera through BMC, budgeting and presentation preparation.</p></div><div class="tag">Source: uploaded CV</div></div>
+</div>
+</div>
+<button class="next" onclick="go('s5')">Okay, there is a pattern.</button>
+</section>
+
+<section class="white" id="s5">
+<div class="wrap">
+<div class="label">04 / The pattern</div>
+<h2>I don't just solve problems.<br><span style="color:#008b68">I get curious about them.</span></h2>
+<div class="pattern">
+<div><h3>Understand</h3><p>Figure out what is actually broken before jumping into solutions.</p></div>
+<div><h3>Learn</h3><p>If I don't know something, I learn enough to move the problem forward.</p></div>
+<div><h3>Build</h3><p>Turn research into an idea, process, proposal, framework or execution.</p></div>
+</div>
+</div>
+<button class="next" onclick="go('s6')">Cool. Why MO4 though?</button>
+</section>
+
+<section class="farah" id="s6">
+<div class="wrap">
+<div class="label">05 / The post that started this</div>
+<div class="farahbox">
+<div class="label">Farah Khaled / Head of Innovation / MO4 Network</div>
+<h2>One hiring post.<br><span class="green">One very different application.</span></h2>
+<p>Farah Khaled's hiring post is what brought me to this application. What made it more interesting was remembering the story she shared about joining MO4 through a creative email, after a hiring post that already had a meme in it.</p>
+<p>That made the usual "CV + cover letter" route feel a little too predictable. So instead of only telling MO4 that I like creative problem solving, I decided to make the application itself a small example of it.</p>
+<div class="callout">A hiring post created the opportunity. Farah's own story about how she approached MO4 became part of the inspiration for how I chose to approach this one.</div>
+</div>
+</div>
+<button class="next" onclick="go('s7')">Wait, you built this for the application?</button>
+</section>
+
+<section id="s7">
+<div class="wrap">
+<div class="label">06 / The side quest</div>
+<h2>I don't know how to build websites.</h2>
+<p>Which is exactly why I built one.</p>
+<p>The problem was simple: <span class="green">"How do I show up differently without pretending to be someone I'm not?"</span></p>
+<p>So I learned what I needed, built the thing, and kept going until it worked.</p>
+<div class="steps">
+<div class="step"><div class="n">01</div><h4>Find the problem</h4><p>Don't confuse the brief with the real problem.</p></div>
+<div class="step"><div class="n">02</div><h4>Learn enough</h4><p>Get the missing knowledge instead of waiting.</p></div>
+<div class="step"><div class="n">03</div><h4>Build</h4><p>Turn the idea into something people can actually use.</p></div>
+<div class="step"><div class="n">04</div><h4>Improve</h4><p>Fix what isn't working and ship it.</p></div>
+</div>
+</div>
+<button class="next" onclick="go('s8')">Okay, I respect the commitment.</button>
+</section>
+
+<section class="manifesto" id="s8">
+<div class="wrap">
+<div class="label">07 / What I bring</div>
+<h2>Business brain.<br>Creative curiosity.<br><span class="green">Problem solver.</span></h2>
+<p>I'm not applying as a web developer, and I'm not trying to sell myself as a full-time creative just because the website looks cool.</p>
+<p>I'm applying as someone who likes understanding businesses, people and problems, then working with the right people to turn ideas into something real.</p>
+<p>And if Farah's post was the door, I figured I should at least knock in a way that makes a little noise.</p>
+</div>
+<button class="next" onclick="go('s9')">Fine. Bring it home.</button>
+</section>
+
+<section class="final" id="s9">
+<img src="leo-finale.jpeg" alt="Leonardo DiCaprio reaction">
+<div class="content">
+<div class="label">08 / The end</div>
+<h2>So...<br><span class="green">did I get your attention?</span></h2>
+<p>You asked for a story. I tried to make mine worth scrolling through.</p>
+<div class="buttons">
+<a class="btn primary" href="mailto:abdelrahmantamer158@gmail.com">Email me</a>
+<a class="btn" href="https://www.linkedin.com/in/abdelrahman-tamer-595855370" target="_blank">LinkedIn</a>
+<a class="btn" href="Abdelrahman_Tamer_MO4_CV.pdf" target="_blank">Open CV</a>
+</div>
+</div>
+</section>
+
+<footer><div>Abdelrahman Tamer</div><div>MO4 Network application / 2026</div></footer>
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+</script>
+</body>
+</html>
